@@ -1,7 +1,9 @@
-age = rand(111)
+age = rand(111) # good catch
 
-string = ''
+string = '' # This shouldn't be needed, you create/set the variable in the if else statement
 
+# also be carefule about indentation. if/else/elsif/end should all be the same level of
+# indentation, and the statements within should be indented two lines
 if age <= 1
   string = 'baby'
   elsif age.between?(1, 10)
@@ -19,5 +21,5 @@ if age <= 1
   else age > 100
   string = 'record breaking'
 end
-
+# like how you crafted the age statement in one line
 puts "Age is " + age.to_s + " " + "and you are" + string + "."
